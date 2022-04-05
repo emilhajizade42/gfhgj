@@ -1,0 +1,167 @@
+1.       Arrayin elementleri cemi
+using System;
+
+namespace FirstPro
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = { 14, 23, 12, 65, 23 };
+            int sum = 0;
+            for (int i = 0; i < arr.Length ; i++)
+            {
+                sum = sum + arr[i];
+            }
+            Console.WriteLine(sum);
+        }
+    }
+}
+
+2. Arraydeki cut ededlerin indexini yaz
+using System;
+
+namespace FirstPro
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = { 12, 13, 16, 15, 20 };
+            for (int i = 0; i < arr.Length; i++)
+            {
+             if (arr[i]%2==0)
+                    Console.WriteLine(i);
+            }
+        }
+    }
+}
+3. Arraydeki tek ededlerin indexini yaz
+using System;
+
+namespace FirstPro
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = { 12, 13, 16, 15, 20 };
+            for (int i = 0; i < arr.Length; i++)
+            {
+             if (arr[i]%2==1)
+                    Console.WriteLine(i);
+            }
+        }
+    }
+}
+4. Verilen eded 2nin nece quvvetidir
+using System;
+
+namespace FirstPro
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 13;
+            int quvvet = 0;
+            if (n == 1)
+                Console.WriteLine(quvvet);
+            else if (n % 2 == 0)
+            {
+                while (n > 1)
+                {
+                    if (n % 2 == 0)
+                        n = n / 2;
+                    quvvet++;
+
+                }
+                Console.WriteLine(quvvet);
+            }
+            else
+                Console.WriteLine("quvveti deyil");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+ int n = 1286;
+            int quvvet = 0;
+            if (n == 1)
+                Console.WriteLine(quvvet);
+            else if (n % 2 == 0)
+            {
+                while (n > 1)
+                {
+                    if (n % 2 == 0)
+                        n = n / 2;
+                        quvvet++;
+
+                }
+                Console.WriteLine(quvvet);
+            }
+            else
+                Console.WriteLine("quvveti deyil");
+
+
+4. Verilmis ededin mertebe sayisi
+using System;
+
+namespace FirstPro
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 12354;
+            int mertebe = 0;
+            while (n > 0)
+            {
+                n=n/10;
+                mertebe++;
+                
+            }
+            Console.WriteLine(mertebe);
+        }
+    }
+}
+
+5. metodla 32 2nin nece quvvetidi
+       static void Main(string[] args)
+        {
+            Console.WriteLine(Count(32,2));
+        }
+        static int Count(int number, int k)
+        {
+            int quvvet = 0;
+            if (number == 1)
+            {
+                Console.WriteLine(quvvet);
+            }
+            else if (number % 2 == 0)
+            {
+                while (number > 1)
+                {
+                    if (number % 2 == 0)
+                        number = number / 2;
+                    quvvet++;
+                }
+                Console.WriteLine(quvvet);
+            }
+            else
+            {
+                Console.WriteLine("quvveti deyil");
+            }
+            return quvvet;
+
+        }
+    }
+}
+
